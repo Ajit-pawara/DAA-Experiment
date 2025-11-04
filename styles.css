@@ -1,0 +1,12 @@
+:root{--bg:#0f1724;--glass-bg:rgba(255,255,255,0.06);--accent:#60a5fa}
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial}
+body{margin:0;min-height:100vh;background:linear-gradient(135deg,#071025 0%, #0b1220 100%);display:flex;align-items:center;justify-content:center;color:#e6eef8}
+.glass{width:min(1000px,94vw);padding:36px;border-radius:18px;background:var(--glass-bg);backdrop-filter:blur(8px) saturate(120%);box-shadow:0 6px 30px rgba(2,6,23,0.7);}
+h1{margin:0 0 6px;font-size:28px}
+.lead{margin:0 0 18px;color:rgba(230,238,248,0.8)}
+.grid{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+button{background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.07);padding:12px 16px;border-radius:12px;color:inherit;cursor:pointer;min-width:200px}
+#demoArea{margin-top:18px;padding:14px;border-radius:12px;background:rgba(255,255,255,0.02);min-height:140px}
+footer{margin-top:18px;opacity:0.8;font-size:13px}
+code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px}
+@media (max-width:600px){.grid{flex-direction:column}}
